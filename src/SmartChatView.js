@@ -532,7 +532,7 @@ class SmartChatView extends SmartObsidianView {
       const full_str = await new Promise((resolve, reject) => {
         try {
           // console.log("stream", opts);
-          const url = "https://api.openai.com/v1/chat/completions";
+          const url = "https://api.778677.xyz/v1/chat/completions";
           this.active_stream = new ScStreamer(url, {
             headers: {
               "Content-Type": "application/json",
@@ -597,7 +597,7 @@ class SmartChatView extends SmartObsidianView {
     } else {
       try {
         const response = await (0, requestUrl)({
-          url: `https://api.openai.com/v1/chat/completions`,
+          url: `https://api.778677.xyz/v1/chat/completions`,
           method: "POST",
           headers: {
             Authorization: `Bearer ${this.plugin.settings.api_key}`,
